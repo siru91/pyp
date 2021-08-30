@@ -1,0 +1,70 @@
+/* html {
+    overflow: hidden;
+} */
+
+body {
+  box-sizing: content-box;
+  overflow: hidden;
+  /* margin: 1vw 1vw 1vw 1vw; */
+  width: 98vw;
+  height: 96vh;
+  background-color: white;
+  outline: 5vh solid black;
+  /* outline-style: solid; outline-color: rgb(0, 39, 145); outline-width: 5vh; */
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1vh;
+  font-size: 5em;
+  color: black;
+}
+
+h3{
+  margin-top: 4em;    
+  font-size: 1.5rem;
+  display: inline;
+  color: #585858;
+}
+
+a {
+  text-decoration: none;
+  color: teal;
+}
+
+a:visited {
+  color: teal;
+  text-underline-position: unset;
+}
+a:hover {
+  color: rgb(255, 196, 0);
+}
+
+p{
+  margin:0
+}
+
+.container{         
+  position: absolute;
+  top: 30%;
+  left: 50%;  
+}
+
+.contents{
+  position: relative;
+  left: -50%;
+}
+
+.link-container {
+  display: flex;
+  flex-wrap: wrap;    
+  justify-content: center;
+}
+
+.menu-btn {
+  margin: 2vh 2vh;  
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+}
