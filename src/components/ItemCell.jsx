@@ -42,18 +42,20 @@ const ThumbImg = styled.img`
   width: 100%;
 `;
 
-
 class ItemCell extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-
-    };
+    this.state = {};
   }
   render() {
     return (
       <>
-        <ItemCells onClick={() => console.log("clicked!")}>
+        <ItemCells
+          onClick={function () {
+            console.log("clicked");
+            console.log(this.props.goTo);
+          }.bind(this)}
+        >
           <div>
             <ThumbImg alt={this.props.alt} src={this.props.thumbImg} />
           </div>

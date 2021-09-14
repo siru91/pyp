@@ -41,19 +41,21 @@ const GlobalStyle = createGlobalStyle`
 
 const Body = styled.body`
   background-color: black;
-`
+`;
 const Border = styled.div`
   position: absolute;
-  left: 4em; right: 4em;
-  top: 4em; bottom: 4em;
+  left: 4em;
+  right: 4em;
+  top: 4em;
+  bottom: 4em;
   background-color: white;
-`
+`;
 
 const Container = styled.div`
   position: absolute;
   top: 30%;
-  left: 50%;  
-`
+  left: 50%;
+`;
 
 const Title = styled.div`
   font-weight: 600;
@@ -66,22 +68,21 @@ const Title = styled.div`
 
 const LinkContainer = styled.div`
   display: flex;
-  flex-wrap: wrap;    
+  flex-wrap: wrap;
   justify-content: center;
-`
+`;
 
 const Contents = styled.div`
   position: relative;
   left: -50%;
-`
+`;
 
 const StLink = styled(Link)`
-  margin: 2vh 2vh;  
+  margin: 2vh 2vh;
   font-size: 1.5rem;
   font-weight: bold;
   display: inline-block;
-`
-
+`;
 
 class Welcome extends Component {
   render() {
@@ -94,7 +95,7 @@ class Welcome extends Component {
           <Container>
             <Contents>
               <Title>Pyoeng</Title>
-              <LinkContainer> 
+              <LinkContainer>
                 <StLink to="./About" id="link-about">
                   About
                 </StLink>

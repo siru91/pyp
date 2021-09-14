@@ -1,0 +1,45 @@
+
+.head-container {
+  height: 60vh;
+  padding-top: 10vh;
+  background: no-repeat center/100% url("../img/coc_head.jpg");
+  position: relative;
+}
+
+.contents.title {
+  margin-left: 17%;
+  margin-bottom: 5%;
+  position: absolute;
+  bottom: 0;
+  
+  font-size: 3rem;
+  font-weight: 800;    
+  color: white;
+}
+
+.holder-container {
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-right: 50px;
+}
+
+#horizontal-mul {
+  display: flex;
+  flex-direction: row;
+  margin-right: 200px;
+}
+
+.holder-title {
+  font-weight: 600;
+}
+
+.holder-desc {
+  margin-left: 0px;
+  margin-top: 5px;
+}
+
+.intro-title, .body-title, .foot-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
