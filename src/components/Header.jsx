@@ -36,7 +36,7 @@ class Header extends Component {
 
     return (
       <div id="header">
-        <div className="py">Pyeong</div>
+        <div className="py">{this.props.nav}</div>
       </div>
     );
   }
