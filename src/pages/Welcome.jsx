@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import styled, { createGlobalStyle } from "styled-components";
+import { motion } from "framer-motion";
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -87,26 +88,33 @@ const StLink = styled(Link)`
 class Welcome extends Component {
   render() {
     console.log("welcome page rendered");
-
+    
     return (
-      <Body>
-        <GlobalStyle />
-        <Border>
-          <Container>
-            <Contents>
-              <Title>Pyoeng</Title>
-              <LinkContainer>
-                <StLink to="./About" id="link-about">
-                  About
-                </StLink>
-                <StLink to="./Works" id="link-works">
-                  Works
-                </StLink>
-              </LinkContainer>
-            </Contents>
-          </Container>
-        </Border>
-      </Body>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{duration: 0.5}}
+      >
+        <Body>
+          <GlobalStyle />
+          <Border>
+            <Container>
+              <Contents>
+                <Title>Pyoeng</Title>
+                <LinkContainer>
+                  <StLink to="./about" id="link-about">
+                    About
+                  </StLink>
+                  <StLink to="./works" id="link-works">
+                    Works
+                  </StLink>
+                </LinkContainer>
+              </Contents>
+            </Container>
+          </Border>
+        </Body>
+      </motion.div>
     );
   }
 }

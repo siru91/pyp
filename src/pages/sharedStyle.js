@@ -13,3 +13,16 @@ export const MainContainer = styled.div `
     padding-right: 10%;
   }
 `;
+
+export const ContentsContainer = styled.div `
+  height: auto;
+  padding-top: 10em;
+  padding-left: 17%;
+  padding-right: 17%;
+  background-color: gray;
+
+  @media screen and (max-width: 1080px) {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+`;

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-const ItemCells = styled.a`
+const ItemCells = styled.div`
   position: relative;
   float: left;
   width: 50%;
@@ -42,29 +42,14 @@ const ThumbImg = styled.img`
   width: 100%;
 `;
 
-class ItemCell extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-  render() {
-    return (
-      <>
-        <ItemCells
-          onClick={function () {
-            console.log("clicked");
-            console.log(this.props.goTo);
-          }.bind(this)}
-        >
-          <div>
-            <ThumbImg alt={this.props.alt} src={this.props.thumbImg} />
-          </div>
-          <strong>{this.props.title}</strong> <br />
-          <em>{this.props.category}</em>
-        </ItemCells>
-      </>
-    );
-  }
+export default function ItemCell(props) {
+  return (
+    <ItemCells>
+      <div>
+        <ThumbImg alt={props.alt} src={props.thumbImg} />
+      </div>
+      <strong>{props.title}</strong> <br />
+      <em>{props.category}</em>
+    </ItemCells>
+  );
 }
-
-export default ItemCell;

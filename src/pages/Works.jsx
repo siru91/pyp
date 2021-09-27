@@ -1,15 +1,24 @@
 import React, { Component } from "react";
 import Header from "../components/Header";
 import styled from "styled-components";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
+import {
+  Route,
+  Switch,
+  Link,
+  useRouteMatch,
+  useLocation,
+} from "react-router-dom";
+
+//Import pages
+import { Contents } from "../pages/index";
 
 //Import Components
 import CategoryDiv from "../components/CategoryDiv";
 import ItemCell from "../components/ItemCell";
-import Contents from "./Contents";
 
 //Import Style
-import { MainContainer } from "./sharedStyle";
+import { MainContainer, ContentsContainer } from "./sharedStyle";
 
 //Import thumbnail images
 import thumb_coc from "../img/thumb_coc.jpg";
@@ -25,23 +34,51 @@ const CategoryContainer = styled.div`
   margin-bottom: 5vh;
 `;
 
-class Works extends Component {
-  render() {
-    return (
-      <>
-        <Header nav="Pyeong > Works" />
+export default function Works() {
+  let { path, url } = useRouteMatch();
+
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <Header nav="Pyeong > Works" />
+      <MainContainer>
+        <div className="list">
+          <CategoryContainer>
+            <CategoryDiv desc="UI/UX" />
+            <Link to={`${url}/coc2016`}>
+              <ItemCell
+                alt="COC_2016"
+                thumbImg={thumb_coc}
+                title="COC 2016"
+                category="공간 VR"
+              ></ItemCell>
+            </Link>
+          </CategoryContainer>
+        </div>
+      </MainContainer>
+      
+      <Switch>
+        <Route exact path={path} />
+        <Route path={`${path}/:contentsIds`} component={Contents} />
+      </Switch>
+      
+      {/* <Switch location={location} key={location.pathname}>
         <MainContainer>
           <div className="list">
             <CategoryContainer>
               <CategoryDiv desc="UI/UX" />
-
-              <ItemCell
-                alt="COC 2016"
-                thumbImg={thumb_coc}
-                title="COC 2016"
-                category="공간 VR"
-                goTo="coc2016"
-              ></ItemCell>
+              <Link to={`${path}/b`}>
+                <ItemCell
+                  alt="COC_2016"
+                  thumbImg={thumb_coc}
+                  title="COC 2016"
+                  category="공간 VR"
+                ></ItemCell>
+              </Link>
 
               <ItemCell
                 alt="연애능력고사"
@@ -94,12 +131,9 @@ class Works extends Component {
               ></ItemCell>
             </CategoryContainer>
           </div>
-
-          <Contents></Contents>
         </MainContainer>
-      </>
-    );
-  }
-}
 
-export default Works;
+      </Switch> */}
+    </motion.div>
+  );
+}
