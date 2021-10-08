@@ -1,7 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const ItemCells = styled.div`
+const ItemCells = styled(Link)`
   position: relative;
   float: left;
   width: 50%;
@@ -19,11 +20,12 @@ const ItemCells = styled.div`
 
   & > em {
     font-size: 1.1em;
+    font-weight: 500;
   }
 
   & > strong {
     font-size: 1.7em;
-    font-weight: 900;
+    font-weight: 700;
   }
 
   &:hover {
@@ -43,8 +45,9 @@ const ThumbImg = styled.img`
 `;
 
 export default function ItemCell(props) {
+
   return (
-    <ItemCells>
+    <ItemCells to={`${props.path}/${props.alt}`}>
       <div>
         <ThumbImg alt={props.alt} src={props.thumbImg} />
       </div>

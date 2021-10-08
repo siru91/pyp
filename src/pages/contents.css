@@ -17,29 +17,30 @@
   color: white;
 }
 
-.holder-container {
+/* .holder-container {
   display:flex;
   flex-direction: column;
   margin-bottom: 30px;
   margin-right: 50px;
-}
+} */
 
-#horizontal-mul {
+/* #horizontal-mul {
   display: flex;
   flex-direction: row;
   margin-right: 200px;
-}
+} */
 
-.holder-title {
+/* .holder-title {
   font-weight: 600;
 }
 
 .holder-desc {
   margin-left: 0px;
   margin-top: 5px;
-}
+} */
 
+/* 
 .intro-title, .body-title, .foot-title {
   font-size: 2rem;
   margin-bottom: 30px;
-}
+} */

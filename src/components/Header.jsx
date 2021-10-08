@@ -1,45 +1,58 @@
-import React, { Component } from "react";
-import "./Header.css";
+import React, { useState } from "react";
+import styled from "styled-components";
 
-class Header extends Component {
-  render() {
-    function init() {
-      // When the user scrolls down 50px from the top of the document, resize the header's font size
-      window.onscroll = function () {
-        scrollFunction();
-      };
-    }
+const HeaderHolder = styled.div`
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  box-sizing: content-box;
 
-    // 스크롤 시 헤더 메뉴 사이즈 조절
-    function scrollFunction() {
-      var headerContainer = document.querySelector("#header");
-      if (
-        document.body.scrollTop > 50 ||
-        document.documentElement.scrollTop > 50
-      ) {
-        headerContainer.style.fontSize = "1.7em";
-        headerContainer.style.padding = "1.5vh 1vh";
-      } else {
-        headerContainer.style.fontSize = "2em";
-        headerContainer.style.padding = "4vh 1vh";
-      }
-    }
+  font-size: 2em;
+  padding: 4vh 0 4vh 0;
 
-    function setTitleNavigation(currentPositionStr) {
-      const PAGE_NAME = "Pyeong";
-      var headerTitle = document.querySelector(".py");
-      headerTitle.innerHTML = `${PAGE_NAME} > ${currentPositionStr}`;
-    }
+  z-index: 5;
+  transition: 0.2s;
 
-    // INIT FUNCTION
-    init();
-
-    return (
-      <div id="header">
-        <div className="py">{this.props.nav}</div>
-      </div>
-    );
+  & > .headerText {
+    color: white;
+    max-width: 35%;
+    padding-left: 17%;
+    display: block;
+    flex: 1;
   }
-}
 
-export default Header;
+  @media screen and (max-width: 1080px) {
+    & > .headerText {
+      max-width: 80%;
+      padding-left: 3%;
+    }
+  }
+
+  &.isScrolled {
+    font-size: 1.7em;
+    padding: 1.5vh 1vh;
+  }
+`;
+
+export default function Header(props) {
+  const [isScrolled, setScrollActive] = useState(false);
+  
+  const onScroll = () => {
+    if(window.scrollY > 50) {
+      setScrollActive(true);
+    } else {
+      setScrollActive(false);
+    }
+  }
+  
+  window.addEventListener('scroll', onScroll);
+
+  return (
+    <HeaderHolder className={isScrolled ? "isScrolled" : ""}>
+      <div className="headerText">{props.nav}</div>
+    </HeaderHolder>
+  );
+}

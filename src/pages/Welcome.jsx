@@ -1,14 +1,11 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import styled, { createGlobalStyle } from "styled-components";
+
+import { GlobalStyle } from "./sharedStyle";
+import styled, {createGlobalStyle} from "styled-components";
 import { motion } from "framer-motion";
 
-const GlobalStyle = createGlobalStyle`
-  html {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-  }
+const IntroGlobalStyle = createGlobalStyle`
   
   body {
     box-sizing: content-box;
@@ -19,20 +16,6 @@ const GlobalStyle = createGlobalStyle`
     @media screen and (max-width: 1080px) {
       font-size: 15px;
     }
-  }
-
-  a {
-    text-decoration: none;
-    color: teal;
-  }
-
-  a:visited {
-    color: teal;
-    text-underline-position: unset;
-  }
-
-  a:hover {
-    color: rgb(255, 196, 0);
   }
 
   p {
@@ -88,15 +71,16 @@ const StLink = styled(Link)`
 class Welcome extends Component {
   render() {
     console.log("welcome page rendered");
-    
+
     return (
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{duration: 0.5}}
+        transition={{ duration: 0.5 }}
       >
         <Body>
+          <IntroGlobalStyle />
           <GlobalStyle />
           <Border>
             <Container>

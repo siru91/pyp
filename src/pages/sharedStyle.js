@@ -1,6 +1,29 @@
 import styled from "styled-components";
-
+import { createGlobalStyle } from "styled-components";
 // Shared style
+
+export const GlobalStyle = createGlobalStyle`
+  html {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:visited {
+    color: black;
+    text-underline-position: unset;
+  }
+
+  a:hover {
+    color: rgb(80, 80, 80);
+  }
+`;
+
 export const MainContainer = styled.div `
   height: auto;
   padding-top: 10em;
