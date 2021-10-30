@@ -4,33 +4,28 @@
       {
         "id": "coc2016",
         "category": "UI",
-        "title": "감성증강 오감테이블",
+        "title": "COC 2016 : \n감성증강 테이블",
         "description": "공간 VR",
         "thumb_img": "/img/thumb_coc.jpg",
         "link_banner": "/img/thumb_coc.jpg",
         "proj_head": {
-          "period": "약 10개월 (2016. 03. ~ 2017. 01.)",
+          "period": "2016. 03. ~ 2017. 01.(10MM)",
           "team": "6인 협업",
-          "abstract": "과학기술부 주관 "
+          "abstract": "한국전파진흥원 주관, 창의+융합형 인재 육성을 위해 디자인, 예술, ICT등 다학계 분야 연구원들이 모인 개방형 캠퍼스.\n 공간에 빔을 투사하여 가상 환경을 생성하고 환경을 제어할 수 있는 테이블을 제작하였다. \n 테이블에 장착된 센서는 사용자의 현재 감성을 측정하여 환경을 감성 상태에 알맞게 변경해준다. ",
+          "my_job": [{"프로젝트 기획": 40}, {"UI/UX 설계 및 구현": 80}, {"Unity3D 실시간 가상환경 구성": 70}]
         },
         "proj_body": {
-          "my_job": "잔소리, 방해하기",
           "usage": [
-            {
-              "Unity": "Unity<p>공간 VR의 전체 환경을 구성하기 위해 사용한 게임엔진.<p>다양한 센서의 연결과 데이터 통신 등을 위해 유니티를 사용했다."
-            },
-            {
-              "PhotoShop": "PhotoShop, Illustrator<p>테이블에 사용된 UI 요소 제작에 사용."
-            },
-            {
-              "쓴거": "또 뭐있지?"
-            }
+            "Unity3D: 프로젝트의 공간 VR 전체 환경을 구성하는데 사용.\n 확장성이 뛰어나기 때문에 공간 시각화는 물론 테이블에 내장된 다양한 센서와의 연결, 데이터 통신에 사용",
+            "PhotoShop + Illustrator: 테이블에 사용된 UI 요소 제작에 사용",
+            "아두이노: 생체 센서 / 다양한 외부 요소(서큘레이터, 조명 등)들을 연결하는데 사용",
+            "Kinect: 테이블 앞 유저의 제스쳐를 인식하고 그에 따라 공간을 제어하기 위해 사용"
           ],
-          "method": "프로젝트의 목적이 '프로젝트의 설계부터 구현에 이르는 전체 프로세스를 경험한 다학제적 융합인재 양성'이였기 때문에 거의 모든 일을 했다. \n 주 전공인 디자인부터 시작해서 \n 공간에 빔을 투사하기 위한 하드웨어 연결-데이터 합치부터 개발, 소스 제작, 공간 구성, 테이블과 함께 사용될 풍속이나 조명 향기등을 조절하는 센서를 연결하고 데이터를 주고받는 일을 했다."
+          "method": "프로젝트의 목적이 '프로젝트의 설계부터 구현에 이르는 전체 프로세스를 경험한 다학제적 융합인재 양성'이였기 때문에 큰 구분없이 거의 모든 일을 했다. \n 전체 내용을 기획하는 일을 시작으로, 주전공인 디자인, 공간에 빔을 투사하기 위한 장치 제어, 게임엔진을 이용한 환경 개발, 테이블과 함께 사용될 풍속이나 조명 향기등을 조절하는 센서를 연결하고 데이터를 주고받는 일을 했다."
         },
         "proj_result": {
-          "rate": "5/10",
-          "earned": "하면 안되겠따!"
+          "rate": "8/10",
+          "earned": "아이고 나죽어"
         }
       },
       {
@@ -39,10 +34,10 @@
         "title": "연애능력고사",
         "description": "UI 제작",
         "thumb_img": "/img/thumb_yng.jpg",
-        "link_banner": "./img/coc_head.jpg",
+        "link_banner": "/img/thumb_yng.jpg",
         "proj_head": {
           "period": "1개월",
-          "team": "1명",
+          "team": "3인 분업",
           "abstract": "감성과학기술센터에서 제작한 시스템에 GUI를 구현한 작업. <p>사용자에게 주관평가, 표정짓기, 제시된 표정 맞추기 등을 수행하게 하며 그 때의 표정과 심박수를 측정하여 각 항목들을 점수로 환산, 반환한다."
         },
         "proj_body": {
@@ -165,7 +160,7 @@
         "category": "Web",
         "title": "VIAF 2021",
         "description": "인터랙티브 웹",
-        "thumb_img": "/img/thumb_ProjectionMapping2.jpg",
+        "thumb_img": "/img/thumb_projectionMapping2.jpg",
         "link_banner": "./img/coc_head.jpg",
         "proj_head": {
           "period": "약 10개월 (2016. 03. ~ 2017. 01.)",
@@ -197,7 +192,7 @@
         "category": "Web",
         "title": "Toy Projects",
         "description": "웹 토이프로젝트",
-        "thumb_img": "/img/thumb_ProjectionMapping2.jpg",
+        "thumb_img": "/img/thumb_projectionMapping2.jpg",
         "link_banner": "./img/coc_head.jpg",
         "proj_head": {
           "period": "1개월",

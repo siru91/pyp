@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 import { GlobalStyle } from "./sharedStyle";
-import styled, {createGlobalStyle} from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import { motion } from "framer-motion";
 
 const IntroGlobalStyle = createGlobalStyle`
@@ -26,6 +26,7 @@ const IntroGlobalStyle = createGlobalStyle`
 const Body = styled.body`
   background-color: black;
 `;
+
 const Border = styled.div`
   position: absolute;
   left: 4em;
@@ -33,6 +34,13 @@ const Border = styled.div`
   top: 4em;
   bottom: 4em;
   background-color: white;
+
+  @media screen and (max-width: 1080px) {
+    left: 1em;
+    right: 1em;
+    top: 1em;
+    bottom: 1em;
+  }
 `;
 
 const Container = styled.div`
@@ -73,13 +81,13 @@ class Welcome extends Component {
     console.log("welcome page rendered");
 
     return (
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <Body>
+      <Body>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <IntroGlobalStyle />
           <GlobalStyle />
           <Border>
@@ -87,18 +95,18 @@ class Welcome extends Component {
               <Contents>
                 <Title>Pyoeng</Title>
                 <LinkContainer>
-                  <StLink to="./about" id="link-about">
+                  <StLink to="/about" id="link-about">
                     About
                   </StLink>
-                  <StLink to="./works" id="link-works">
+                  <StLink to="/works" id="link-works">
                     Works
                   </StLink>
                 </LinkContainer>
               </Contents>
             </Container>
           </Border>
-        </Body>
-      </motion.div>
+        </motion.div>
+      </Body>
     );
   }
 }

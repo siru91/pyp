@@ -7,6 +7,7 @@ import {
 
 //Import pages
 import { Contents, WorksList } from "../pages/index";
+import Header from "../components/Header";
 
 export default function Works({ match }) {
   return (
