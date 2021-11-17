@@ -14,7 +14,7 @@ const IntroGlobalStyle = createGlobalStyle`
     background-color: black;
 
     @media screen and (max-width: 1080px) {
-      font-size: 15px;
+      font-size: 13px;
     }
   }
 
@@ -23,16 +23,12 @@ const IntroGlobalStyle = createGlobalStyle`
   }
 `;
 
-const Body = styled.body`
-  background-color: black;
-`;
-
 const Border = styled.div`
   position: absolute;
-  left: 4em;
-  right: 4em;
-  top: 4em;
-  bottom: 4em;
+  left: 2em;
+  right: 2em;
+  top: 2em;
+  bottom: 2em;
   background-color: white;
 
   @media screen and (max-width: 1080px) {
@@ -45,8 +41,9 @@ const Border = styled.div`
 
 const Container = styled.div`
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
+  transform: translate(-50%, -75%);
 `;
 
 const Title = styled.div`
@@ -66,7 +63,6 @@ const LinkContainer = styled.div`
 
 const Contents = styled.div`
   position: relative;
-  left: -50%;
 `;
 
 const StLink = styled(Link)`
@@ -74,6 +70,22 @@ const StLink = styled(Link)`
   font-size: 1.5rem;
   font-weight: bold;
   display: inline-block;
+
+  @media screen and (max-width: 1080px) {
+    margin: 3vw;
+    font-size: 1rem;
+  }
+`;
+
+const TitleImg = styled.svg`
+  width: 25rem;
+  fill: #726d6e;
+  stroke-width: 2px;
+  stroke: black;
+
+  @media screen and (max-width: 1080px) {
+    width: auto;
+  }
 `;
 
 class Welcome extends Component {
@@ -81,7 +93,7 @@ class Welcome extends Component {
     console.log("welcome page rendered");
 
     return (
-      <Body>
+      <>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -93,7 +105,30 @@ class Welcome extends Component {
           <Border>
             <Container>
               <Contents>
-                <Title>Pyoeng</Title>
+                {/* <Title>Pyoeng</Title> */}
+                <TitleImg
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 125 100"
+                >
+                  <rect x="5.5" y="33.17" class="st0" width="15" height="60" />
+                  <rect
+                    x="105.5"
+                    y="33.17"
+                    class="st0"
+                    width="15"
+                    height="60"
+                  />
+                  <circle class="st0" cx="42.06" cy="52.23" r="19.06" />
+                  <polygon
+                    class="st0"
+                    points="78.4,34.07 65.45,34.07 65.44,34.08 65.44,47.05 89.68,71.29 102.64,71.29 102.65,71.28 102.65,58.32 
+	"
+                  />
+                </TitleImg>
                 <LinkContainer>
                   <StLink to="/about" id="link-about">
                     About
@@ -106,7 +141,7 @@ class Welcome extends Component {
             </Container>
           </Border>
         </motion.div>
-      </Body>
+      </>
     );
   }
 }

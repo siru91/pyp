@@ -29,7 +29,7 @@ const CategoryTitle = styled.div`
 
 class CategoryDiv extends Component {
   render() {
-    return(
+    return (
       <>
         <CategoryTitleBg>
           <CategoryTitle>{this.props.desc}</CategoryTitle>
@@ -37,7 +37,6 @@ class CategoryDiv extends Component {
       </>
     );
   }
-
 }
 
-export default CategoryDiv
+export default CategoryDiv;

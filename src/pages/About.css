@@ -1,93 +1,96 @@
-
-.a .main-container{  
-    height: auto;    
-    background-color: white;
+.a .main-container {
+  height: auto;
+  background-color: white;
 }
 
 .a .container {
-    padding-left: 15%;
-    padding-right: 15%; 
-    margin-bottom: 300px;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-bottom: 300px;
 }
 
 .container:nth-child(1) {
-    padding-top: 8em;
-    margin-bottom: 10px;
+  padding-top: 8em;
+  margin-bottom: 10px;
 }
 
 .main-container > .container > div {
-    font-size: 1.7rem;
-    margin-bottom: 7%;
+  font-size: 1.7rem;
+  margin-bottom: 7%;
 }
 
 #intro-container {
-    margin-bottom: 150px;
+  margin-bottom: 150px;
 }
 
 .img-holder {
-    display: flex;
-    orientation: row;
+  display: flex;
+  orientation: row;
 }
 
 .img {
-    margin-bottom: 10px;
-    display: block;
-    width: 100%;
-    height: 100%;
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .text-holder {
-    display: flex;
-    margin-left: 15%;
-    margin-right: 15%;
-    justify-content: space-between;
+  display: flex;
+  margin-left: 15%;
+  margin-right: 15%;
+  justify-content: space-between;
 }
 
 .text {
-    display: inline;
+  display: inline;
 }
-
 
 /* svg css */
 .circle01 {
-    margin-left: 100px;
+  margin-left: 100px;
 }
 
-.circle01, .circle02 {
-    fill:rgba(0,0,255,0.7);
+.circle01,
+.circle02 {
+  fill: rgba(0, 0, 255, 0.7);
 }
 
-.circle01:hover, .circle02:hover {
-    fill:black;
-    transition: 0.5s;
+.circle01:hover,
+.circle02:hover {
+  fill: black;
+  transition: 0.5s;
 }
 
 .horizontal-divider {
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    width: 90%;
-    height: 1.5px;
-    background-color:gray;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 90%;
+  height: 1.5px;
+  background-color: gray;
 }
 
 .collapsible {
-    width: 100%;
-    text-align: left;
-    padding: 10px;
-    cursor: pointer;
-    background-color: "#eee";
-    border: none;
-    font-size: 1.3rem;
-    font-weight: 600;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  cursor: pointer;
+  background-color: "#eee";
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 #coll {
-    font-size: 1.2rem;
-    padding: 5px 20px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+  font-size: 1.2rem;
+  padding: 5px 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
-
+.about_intro > .circle,
+.about_intro > .polygon {
+  fill: royalblue;
+}

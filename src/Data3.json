@@ -1,14 +1,19 @@
 [
   {
     "id": "coc2016",
-    "category": "UI/UX",
-    "title": "COC 2016 : \n감성증강 테이블",
+    "category": "UI",
+    "title": "COC 2016 : 감성증강 테이블",
     "subtitle": "UI/UX, 공간 VR",
     "thumb_img": "/img/thumb_coc.jpg",
-    "link_banner": "/vid/coc2016_vid_01.mp4",
+    "link_banner": "/img/coc2016/vid01.mp4",
     "banner_type": "vid",
+    "client": "한국전파진흥원",
     "period": "2016. 03. ~ 2017. 01.",
     "team": "6인 협업",
+    "results": [
+      "공간 VR",
+      "결과 보고용 책자"
+    ],
     "my_job": [
       {
         "프로젝트 기획": 40
@@ -28,45 +33,26 @@
     ],
     "rate": "8/10",
     "earned": "아이고 나죽어",
+    "videos": [
+      "/img/coc2016/vid01.mp4"
+    ],
     "images": [
-      {
-        "url": "/img/coc2016/01.jpg"
-      },
-      {
-        "url": "/img/coc2016/02.jpg"
-      },
-      {
-        "url": "/img/coc2016/03.jpg"
-      },
-      {
-        "url": "/img/coc2016/04.jpg"
-      },
-      {
-        "url": "/img/coc2016/05.jpg"
-      },
-      {
-        "url": "/img/coc2016/06.jpg"
-      },
-      {
-        "url": "/img/coc2016/07.jpg"
-      },
-      {
-        "url": "/img/coc2016/08.jpg"
-      },
-      {
-        "url": "/img/coc2016/09.jpg"
-      },
-      {
-        "url": "/img/coc2016/10.jpg"
-      },
-      {
-        "url": "/img/coc2016/11.jpg"
-      }
+      "/img/coc2016/01.jpg",
+      "/img/coc2016/02.jpg",
+      "/img/coc2016/03.jpg",
+      "/img/coc2016/04.jpg",
+      "/img/coc2016/05.jpg",
+      "/img/coc2016/06.jpg",
+      "/img/coc2016/07.jpg",
+      "/img/coc2016/08.jpg",
+      "/img/coc2016/09.jpg",
+      "/img/coc2016/10.jpg",
+      "/img/coc2016/11.jpg"
     ]
   },
   {
     "id": "yng",
-    "category": "UI/UX",
+    "category": "UI",
     "title": "연애능력고사",
     "subtitle": "UI",
     "thumb_img": "/img/thumb_yng.jpg",
@@ -91,7 +77,7 @@
   },
   {
     "id": "gutsy",
-    "category": "UI/UX",
+    "category": "UI",
     "title": "Gutsy",
     "subtitle": "UI/UX",
     "thumb_img": "/img/thumb_gutsy.jpg",
@@ -162,8 +148,8 @@
     "category": "Web",
     "title": "VIAF 2021",
     "subtitle": "유니티, 웹 인터랙티브",
-    "thumb_img": "/img/thumb_projectionMapping2.jpg",
-    "link_banner": "./img/coc_head.jpg",
+    "thumb_img": "/img/thumb_viaf2021.jpg",
+    "link_banner": "./img/thumb_viaf2021.jpg",
     "period": "약 10개월 (2016. 03. ~ 2017. 01.)",
     "team": "2인 분업",
     "my_job": [

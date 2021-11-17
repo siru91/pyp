@@ -11,19 +11,23 @@ class About extends Component {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{duration: 0.5}}
+        transition={{ duration: 0.5 }}
       >
         <div className="a main-container">
           <div className="a container">
             <div id="intro-container" data-aos="fade-in" data-aos-delay="100">
               <svg
-                className="img"
-                viewBox="0 0 240 120"
+                className="about_intro"
+                viewBox="0 0 372 180"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <circle className="circle01" cx="60" cy="60" r="50" />
-                <circle className="circle02" cx="180" cy="60" r="50" />
+                <circle class="circle" cx="89.34" cy="89.85" r="85.71" />
+                <polygon
+                  class="polygon"
+                  points="276.7,4.14 197.06,4.14 197.01,4.19 197.01,83.92 288.65,175.56 368.33,175.56 368.38,175.51 
+	368.38,95.82 "
+                />
               </svg>
 
               <div className="text-holder" data-aos="fade-in">
