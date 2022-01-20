@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/pyp/static/css/main.760d153a.chunk.css",
-    "main.js": "/pyp/static/js/main.63e409b0.chunk.js",
-    "main.js.map": "/pyp/static/js/main.63e409b0.chunk.js.map",
+    "main.js": "/pyp/static/js/main.c1a5cd73.chunk.js",
+    "main.js.map": "/pyp/static/js/main.c1a5cd73.chunk.js.map",
     "runtime-main.js": "/pyp/static/js/runtime-main.6ee09d08.js",
     "runtime-main.js.map": "/pyp/static/js/runtime-main.6ee09d08.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/pyp/static/css/2.7fc9bc2b.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.3e5b2794.chunk.js",
     "static/css/main.760d153a.chunk.css",
-    "static/js/main.63e409b0.chunk.js"
+    "static/js/main.c1a5cd73.chunk.js"
   ]
 }
