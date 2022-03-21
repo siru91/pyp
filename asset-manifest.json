@@ -1,23 +1,13 @@
 {
   "files": {
-    "main.css": "/pyp/static/css/main.760d153a.chunk.css",
-    "main.js": "/pyp/static/js/main.12ae12ea.chunk.js",
-    "main.js.map": "/pyp/static/js/main.12ae12ea.chunk.js.map",
-    "runtime-main.js": "/pyp/static/js/runtime-main.6ee09d08.js",
-    "runtime-main.js.map": "/pyp/static/js/runtime-main.6ee09d08.js.map",
-    "static/css/2.7fc9bc2b.chunk.css": "/pyp/static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.62fa37d0.chunk.js": "/pyp/static/js/2.62fa37d0.chunk.js",
-    "static/js/2.62fa37d0.chunk.js.map": "/pyp/static/js/2.62fa37d0.chunk.js.map",
+    "main.css": "/pyp/static/css/main.c4798800.css",
+    "main.js": "/pyp/static/js/main.4cc0f06f.js",
     "index.html": "/pyp/index.html",
-    "static/css/2.7fc9bc2b.chunk.css.map": "/pyp/static/css/2.7fc9bc2b.chunk.css.map",
-    "static/css/main.760d153a.chunk.css.map": "/pyp/static/css/main.760d153a.chunk.css.map",
-    "static/js/2.62fa37d0.chunk.js.LICENSE.txt": "/pyp/static/js/2.62fa37d0.chunk.js.LICENSE.txt"
+    "main.c4798800.css.map": "/pyp/static/css/main.c4798800.css.map",
+    "main.4cc0f06f.js.map": "/pyp/static/js/main.4cc0f06f.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.6ee09d08.js",
-    "static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.62fa37d0.chunk.js",
-    "static/css/main.760d153a.chunk.css",
-    "static/js/main.12ae12ea.chunk.js"
+    "static/css/main.c4798800.css",
+    "static/js/main.4cc0f06f.js"
   ]
 }
