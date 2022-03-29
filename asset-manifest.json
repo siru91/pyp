@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/pyp/static/css/main.c4798800.css",
-    "main.js": "/pyp/static/js/main.6e6d9314.js",
+    "main.js": "/pyp/static/js/main.f3c4ff45.js",
     "index.html": "/pyp/index.html",
     "main.c4798800.css.map": "/pyp/static/css/main.c4798800.css.map",
-    "main.6e6d9314.js.map": "/pyp/static/js/main.6e6d9314.js.map"
+    "main.f3c4ff45.js.map": "/pyp/static/js/main.f3c4ff45.js.map"
   },
   "entrypoints": [
     "static/css/main.c4798800.css",
-    "static/js/main.6e6d9314.js"
+    "static/js/main.f3c4ff45.js"
   ]
 }
